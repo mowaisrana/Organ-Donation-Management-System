@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{18329283-4378-4CB9-9460-AB87960A3AD4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OrganDonationApplication_1._0</RootNamespace>
+    <AssemblyName>OrganDonationApplication_1.0</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPortal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPortal.Designer.cs">
+      <DependentUpon>AdminPortal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApAddBlood.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ApAddBlood.Designer.cs">
+      <DependentUpon>ApAddBlood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApAddHospitals.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ApAddHospitals.Designer.cs">
+      <DependentUpon>ApAddHospitals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApAddOrgans.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ApAddOrgans.Designer.cs">
+      <DependentUpon>ApAddOrgans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApLogs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ApLogs.Designer.cs">
+      <DependentUpon>ApLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApRequests.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ApRequests.Designer.cs">
+      <DependentUpon>ApRequests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ApUsers.Designer.cs">
+      <DependentUpon>ApUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BloodData.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalsData.cs" />
+    <Compile Include="LogsData.cs" />
+    <Compile Include="OrganData.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RequestData.cs" />
+    <Compile Include="UpBloods.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpBloods.Designer.cs">
+      <DependentUpon>UpBloods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpDonate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpDonate.Designer.cs">
+      <DependentUpon>UpDonate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpHospitals.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpHospitals.Designer.cs">
+      <DependentUpon>UpHospitals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpOrgans.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpOrgans.Designer.cs">
+      <DependentUpon>UpOrgans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpProfile.Designer.cs">
+      <DependentUpon>UpProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserPortal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserPortal.Designer.cs">
+      <DependentUpon>UserPortal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersData.cs" />
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPortal.resx">
+      <DependentUpon>AdminPortal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApAddBlood.resx">
+      <DependentUpon>ApAddBlood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApAddHospitals.resx">
+      <DependentUpon>ApAddHospitals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApAddOrgans.resx">
+      <DependentUpon>ApAddOrgans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApLogs.resx">
+      <DependentUpon>ApLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApRequests.resx">
+      <DependentUpon>ApRequests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApUsers.resx">
+      <DependentUpon>ApUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpBloods.resx">
+      <DependentUpon>UpBloods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpDonate.resx">
+      <DependentUpon>UpDonate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpHospitals.resx">
+      <DependentUpon>UpHospitals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpOrgans.resx">
+      <DependentUpon>UpOrgans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpProfile.resx">
+      <DependentUpon>UpProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPortal.resx">
+      <DependentUpon>UserPortal.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\logo2_png_120.png" />
+    <Content Include="Assets\logo_png_120.png" />
+    <None Include="Resources\request_page_80x80.png" />
+    <None Include="Resources\forum_80x80.png" />
+    <None Include="Resources\add_home_work_80x80.png" />
+    <None Include="Resources\analytics_80x80.png" />
+    <None Include="Resources\pulmonology_80x80.png" />
+    <None Include="Resources\bloodtype_80x80.png" />
+    <None Include="Resources\home_health_80x80.png" />
+    <None Include="Resources\volunteer_activism_80x80.png" />
+    <None Include="Resources\person_80x80.png" />
+    <None Include="Resources\support_agent_80x80.png" />
+    <None Include="Resources\logout_80x80.png" />
+    <None Include="Resources\logout_80dp_BF0000_FILL0_wght400_GRAD0_opsz48.png" />
+    <None Include="Resources\logo2_png_120.png" />
+    <None Include="Resources\logo_png_120.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
