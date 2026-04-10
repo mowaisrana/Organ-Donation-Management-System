@@ -49,7 +49,7 @@ This project was developed as an **academic / DBMS project** and demonstrates co
 
 * `UpdateOrgan` – Updates an existing organ donation record
 * `DeleteOrgan` – Deletes a record using OrganID
-* (Optional) Insert and Search procedures
+* Insert and Search procedures
 
 Stored procedures improve:
 
